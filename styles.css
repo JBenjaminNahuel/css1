@@ -9,73 +9,89 @@
 }
 body{
     background-color:rgb(15, 15, 15) ;
-}
-header{
     
+}
+        /*ENCABEZADO*/
+
+header{
+    width: 100%;
     height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background: linear-gradient(transparent,rgb(39, 113, 144));
+    background-color: rgb(10, 11, 12);
     padding:  30px 50px;
-    margin:  40px;
-    border:  solid 2px;
-    border-color: rgb(148, 154, 156);
+    margin-bottom: 50px;
+    border-top: 3px solid rgb(24, 21, 19);
     padding-left: 5%;
     padding-right: 5%;
-
+    border-bottom: solid 1px white;
+    box-shadow: 0px 0px 5px white;
+    position: fixed;
+    top: 0;
+    
 }
+.nav1 i{
+    font-size: 30px;
+    display: none;
+  }
+  #menu{
+    display: none;
+  }
+
 .logo{
     height: 55px;
     width: 55px;
-    
-
 }
 
-
-.nav1,
 .ul1{
     display: flex;
     align-items: center;
-    justify-content: center;
-    
-    
+    justify-content: center;  
 }
+
 li{
     padding: 20px;
+    animation-iteration-count: 2s;
 }
+
 .nav1{
     gap: 100px;
     padding-left: 5%;
-   
-    
+}
 
-}
 a{ 
-    color: rgb(72, 143, 177);
+    color: rgb(179, 182, 184);
     font-size: 14px;
-    text-decoration: none;
-    
+    text-decoration: none; 
+    font-family: fantasy;  
 }
+
+a:hover{
+    color: rgb(19, 19, 17);
+}
+.DCboton:hover,.marvelboton:hover{
+    color: black;
+}
+
+/* MAIN CONTENIDO*/
+
 main{
     background-color: rgb(15, 15, 15) ;
     display: flex;
     flex-direction: column;
-   
-    
-   
-    
-    
-    
+    margin-top: 150px;        
 }
+
 #HERO{
     margin-top: 50px;
     padding: 50px 0px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;   
 }
+
 .marvelboton{
     border-radius: 10px;
     font-size: 14px;
@@ -84,6 +100,7 @@ main{
     color: white;
     border: solid 2px;
 }
+
 .DCboton{
     border-radius: 10px;
     font-size: 14px;
@@ -92,29 +109,330 @@ main{
     color:white;
     border: solid 2px;
 }
+
 .HERO-INFO{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 50%;
-    
-    
+    width: 50%;   
 }
+
 .HERO-INFO h1{
-    font-size: 50px;
+    font-size: 55px;
     width: 80%;
     font-weight: 700;
-    color: rgb(220, 229, 233) ;
+    color: rgb(103, 105, 108);
+    text-shadow:8px 5px 10px rgb(139, 53, 53);
+    font-family: monospace;  
 }
+.azul{
+    font-size: 55px;
+    width: 80%;
+    font-weight: 700;
+    color: rgb(26, 73, 144);
+    text-shadow:8px 5px 10px rgb(218, 214, 214);
+    font-family:fantasy;  
+
+}
+.rojo{
+    font-size: 55px;
+    width: 80%;
+    font-weight: 700;
+    color: rgb(150, 22, 22);
+    text-shadow:8px 5px 10px rgb(255, 255, 255);
+    font-family: fantasy; 
+    letter-spacing: 15px; 
+
+}
+
+
 .HERO-INFO p{
     font-size: 14px;
     width: 60%;
-    color: grey
+    color: grey;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-.img{
+
+.img1{
     padding: 20px 20px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    border: solid 4px;
-    border-color: rgb(139, 134, 134);
+    border: solid 5px;
+    border-color: rgb(65, 65, 93);
+    box-shadow: 0px 0px  10x rgb(174, 191, 198);
+    cursor: pointer;
 }
+
+    /*ANIMACION DE IMAGEN INICIO*/
+.img :hover{
+    transform: scale(1.05,1.05);
+    transition: transform 1s;    
+}
+        /*IMAGENES DE CONTENDIO MARVEL Y DC*/
+
+.imageness{
+    width: 250px;
+    height: 250px;
+    padding:15px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(179, 45, 45);
+    border-radius: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 25px 25px 0px 25px;
+    box-shadow: 0px 0px 5px rgb(218, 207, 207); 
+    margin: 60px;
+    cursor: pointer;
+}
+p{
+    color: black;
+    font-family: Impact;
+}
+
+    /*ANIMACION DE IMAGENES DE MARVEL*/
+.imageness :hover{
+    transform: scale(1.05,1.05);
+    transition: transform 1s;
+}
+
+.fune{    
+    width: 200px;
+    height:200px; 
+}
+
+.funk{  
+   text-align: center;
+   margin-top: 50px;
+   padding: 10px;  
+}
+
+.dcdiv{
+    width: 250px;
+    height: 250px;
+    padding:15px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(39, 113, 144);
+    border-radius: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 25px 25px 0px 25px;
+    box-shadow: 0px 0px 5px rgb(218, 207, 207); 
+    margin: 60px;
+    cursor: pointer;
+}
+
+    /*ANIMACION DE IMAGENES DC*/
+.dcdiv :hover{
+    transform: scale(1.05,1.05);
+    transition: transform 1s;    
+}
+
+.fun{
+    width: 200px;
+    height:200px;
+    animation-iteration-count: 3s; 
+}
+
+.funke{
+   text-align: center;
+   margin-top: 50px;
+   padding: 10px;
+}
+
+        /*FINAL Y LOGO DE WSP*/
+
+footer{
+    background: linear-gradient(transparent,rgb(11, 29, 36));
+    background-color: rgb(39, 113, 144);
+    margin-top: 30px;
+    display:flex;
+    justify-content: space-between;
+}
+
+footer ul { 
+    transition: 1s;
+    color: white;
+    text-decoration: none;
+}
+
+footer ul :hover{
+    color: rgb(0, 0, 0);
+}
+
+h3{
+    color: rgb(244, 243, 241);
+    margin: 20px 0px 15px 30px;
+}
+
+footer  li {
+    padding: 8px;
+    margin-left:28px;
+    font-family: fantasy;
+}
+
+.logoWpp {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+   h4{
+    background-color: rgb(0, 0, 0);
+    color: rgb(140, 142, 150);
+    height: 45px;
+    line-height: 45px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 600px) {
+       main{
+        margin-top:  20px;
+       }   
+    .nav1 ul {
+      background-color: rgb(0, 0, 0);
+      width: 100%;
+      height: calc(100vh - 80px);
+      position: absolute;
+      left: 0;
+      top: 80px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      display: none;
+
+    }
+    .nav1 i{
+      display: block;
+    }
+    #menu:checked ~ .ul1 {
+      display: flex;
+    }
+    #HERO{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+       width: 100%;
+       margin-top: 20px;
+      
+        
+       
+        
+    }
+    .HERO-INFO{
+        display: flex;
+        
+        gap: 30px;
+        width: 100%;   
+        align-items: center;
+        justify-content: center ;
+    }
+    
+    .tituloo{
+        text-align: center;
+
+        font-size: 35px;
+        width: 100%;
+        font-weight: 700;
+        color: rgb(29, 58, 86);
+        text-shadow:8px 5px 10px rgb(175, 171, 171);
+        font-family: monospace;  
+    }
+    .azul{
+        font-size: 35px;
+        letter-spacing: 5px;
+    }
+    .rojo{
+        font-size: 35px;
+        letter-spacing: 5px;
+    }
+        
+   
+     
+        .HERO-INFO p{
+            font-size: 12px;
+            width: 100%;
+            color: grey;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-left:130px;
+            text-align: center;
+            justify-content: center;
+         
+        }
+        .botones{
+            display: flex;
+            margin-left: 130px;
+
+        }
+        .img1{
+            padding: 20px 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 70px;
+            border: solid 3px;
+            border-color: rgb(41, 59, 115);
+            box-shadow: 0px 0px  10x rgb(174, 191, 198);
+            cursor: pointer;
+            width: 130px;
+            height: 130px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 50px;
+            margin-bottom: 200px;
+        }
+        
+      
+    .navegacion{
+      display: none;
+    }
+    footer ul 
+    {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center
+    }
+    .pagos{
+      padding-left: 28px;
+    }
+    .ahre{
+      font-size: 10px;
+      margin: 2px 10px 2px 10px ;
+      padding-bottom:0px;
+    }
+    .envios h3{
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+    .envioss{
+      justify-content: right;
+      padding-left: 35px;
+    }
+    .pagoss{
+      padding-left: 10px;
+    }
+    .dcdiv{
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+        text-align: center;
+    }
+    .fun{
+        width: 150px;
+        height: 150px;
+    }
+    .imageness{
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+        text-align: center;
+    }
+    .fune{
+        width: 150px;
+        height: 150px;
+    }
+  }
+
+

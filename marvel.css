@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: sans-serif;
+    
+}
+body{
+    background-color: black;
+}
+        /*ENCABEZADO*/
+
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(transparent,rgb(39, 113, 144));
+    background-color: rgb(10, 11, 12);
+    padding:  30px 50px;
+    border-top: 3px solid rgb(24, 21, 19);
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: 0px 0px 5px white;
+    position: fixed;
+    top: 0;
+    border-bottom: solid 1px white;
+}
+
+.logo{
+    height: 55px;
+    width: 55px;
+}
+.nav1 i{
+    font-size: 30px;
+    display: none;
+  }
+  #menu{
+    display: none;
+  }
+
+.ul1{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+li{
+    padding: 20px;
+}
+
+.nav1{
+    gap: 100px;
+    padding-left: 5%;  
+}
+
+a{ 
+    color: rgb(179, 182, 184);
+    font-size: 14px;
+    text-decoration: none;
+    font-family: fantasy;
+}
+a:hover{
+    color: rgb(213, 55, 55);
+}
+
+/*CONTENIDO DE IMAGENES DE MARVEL*/
+
+h1{
+    width: 400px;
+    color: rgb(79, 79, 69); 
+    text-align: center;
+    letter-spacing: 10px;
+    font-family: fantasy;
+    font-size: 40px;
+    background: linear-gradient(transparent rgb(91, 126, 141));
+    text-shadow:5px 5px 15px rgb(205, 31, 31);
+    margin: auto;
+    margin-top: 40px;  
+}
+
+.mavi{
+    width: 250px;
+    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+    padding:15px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(170, 32, 32);
+    border-radius: 10px;
+    display: inline-block;    box-sizing: border-box;
+    margin: 40px 25px 0px 25px;
+    box-shadow: 0px 0px 10px rgb(218, 207, 207); 
+    cursor: pointer;   
+}
+p{
+    color: rgb(0, 0, 0);
+    font-family:Impact;
+}
+/*TRANSITION Y ANIMACION DE IMAGENES*/
+.mavi :hover{
+    transform: scale(1.05,1.05);
+    transition: transform 1s; 
+}  
+
+.fun{
+    width: 200px;
+    height:200px;
+}
+
+.funk{
+   text-align: center;
+   margin-top: 50px;
+   padding: 10px;
+}
+
+        /*FINAL Y LOGO DE WSP*/
+
+        footer{
+            background: linear-gradient(transparent,rgb(11, 29, 36));
+            background-color: rgb(39, 113, 144);
+            margin-top: 60px;
+            display:flex;
+            justify-content: space-between;
+            
+        }
+        
+
+footer ul { 
+    transition: 1s;
+    color: white;
+    text-decoration: none;
+    
+    
+}
+
+
+footer ul :hover{
+    color: rgb(200, 45, 45);
+}
+
+h3{
+    color: white;
+    margin: 20px 0px 15px 30px;
+}
+
+footer  li {
+    padding: 8px;
+    margin-left:28px;
+    font-family: fantasy;
+    
+}
+
+.logoWpp {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+h4{
+    background-color: rgb(0, 0, 0);
+    color: rgb(140, 142, 150);
+    height: 45px;
+    line-height: 45px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 30px;
+    }
+          
+    .nav1 ul {
+      background-color: rgb(0, 0, 0);
+      width: 100%;
+      height: calc(100vh - 80px);
+      position: absolute;
+      left: 0;
+      top: 80px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      display: none;
+
+    }
+    .nav1 i{
+      display: block;
+      margin-right: 20px;
+    }
+    #menu:checked ~ .ul1 {
+      display: flex;
+    }
+    .navegacion{
+      display: none;
+    }
+    footer ul 
+    {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center
+    }
+    .pagos{
+      padding-left: 28px;
+    }
+    .ahre{
+      font-size: 10px;
+      margin: 2px 10px 2px 10px ;
+      padding-bottom:0px;
+    }
+    .envios h3{
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+    .envioss{
+      justify-content: right;
+      padding-left: 35px;
+    }
+    .pagoss{
+      padding-left: 10px;
+    }
+    .mavi{
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+        text-align: center;
+        margin-left: 50px;
+    }
+    .fun{
+        width: 150px;
+        height: 150px;
+    }
+    
+  }

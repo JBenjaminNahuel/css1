@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css encabezado</title>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://th.bing.com/th?id=OIP.zagKavrWAqnHBI1-Sm60OAHaF3&w=280&h=222&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
 </head>
 <body>
     <header>
         <img src="https://th.bing.com/th?id=OIP.zagKavrWAqnHBI1-Sm60OAHaF3&w=280&h=222&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" class="logo"/>
         
         <nav class="nav1">
+          <label for="menu"><i class="fa-solid fa-bars"></i></label>
+          <input type="checkbox" id="menu">
          <ul class="ul1">
-             <li><a href="#">Inicio</a></li>
-             <li><a href="#">Sobre nostros</a></li>
-             <li><a href="#">Contactanos</a></li>
-             <li><a href="#">Portafolio</a></li>
+             <li><a href="index.html">Inicio</a></li>
+             <li><a href="nost.html">Sobre nostros</a></li>
+             <li><a href="cont.html">Contactanos</a></li>
+             <li><a href="cata.html">Catalogo</a></li>
          </ul>
         </nav>
         
@@ -24,17 +28,80 @@
     <main>
         <section id="HERO">
             <div class="HERO-INFO">
-                <h1>Funkos original Marvel and Dc</h1>
-                <p> Bienvenido a nuestra tienda de funkos, busca tu superheroe favorito de cualquier saga, pelicula, serie etc. </p>
-                <div>
-                 <a class="marvelboton" href="#">MARVEL</a>
-                 <a href="#" class="DCboton">DC</a>
+                <h1 class="tituloo"><span class="azul">Funkos</span> <span class="rojo">originals Marvel</span> <span class="azul">and Dc</span></h1>
+                <p>  Bienvenido a nuestra tienda de funkos, busca tu superheroe favorito de cualquier saga, pelicula, serie etc. </p>
+                <div class="botones">
+                 <a class="marvelboton" href="marvel.html">MARVEL</a>
+                 <a href="dc.html" class="DCboton">DC</a>
                 </div>
             </div>
             <div class="img">
-                <img src="https://th.bing.com/th/id/OIP.hWNSUbMhyx00RRg1Vcdr0QHaHa?w=180&h=180&c=7&r=0&o=5&pid=1.7" alt="ironman">
+                <img class="img1" src="https://th.bing.com/th/id/OIP.hWNSUbMhyx00RRg1Vcdr0QHaHa?w=180&h=180&c=7&r=0&o=5&pid=1.7" alt="ironman">
             </div>
+          
         </section>
-    </main>
+          <section class="funk">
+            <div class="imageness">
+                <img class="fune" src="https://th.bing.com/th/id/OIP.s2Wto91Hiy38zgmCSLWr9wHaHa?rs=1&pid=ImgDetMain" alt="Capitan america">
+                <p>capitan america</p>
+             </div>
+             <div class="imageness">
+                <img class="fune" src="https://th.bing.com/th/id/OIP.wAWyTEfHwXTL6Q9rN_dDowHaHa?w=800&h=800&rs=1&pid=ImgDetMain" alt="Iron man">
+                <p>iron man</p>
+             </div>
+             <div class="imageness">
+                <img class="fune" src="https://juegosdemesaypuzzles.com/wp-content/uploads/2020/04/Los-mejores-FUNKO-POP-de-Marvel-Funko-Hulk-Funko-de-Hulk-traje-Stark-768x911.jpg" alt="Hulk">
+                <p>Hulk</p>
+             </div>
+          </section>
+          <section class="funke">
+            
+              <div class="dcdiv">
+                 <img class="fun" src="https://media.gamestop.com/i/gamestop/11203670" alt="Flash">
+                 <p>Flash</p>
+              </div>
+              <div class="dcdiv">
+                 <img class="fun" src="https://th.bing.com/th/id/OIP.pAfklR4axn-cYttszZYmDAAAAA?rs=1&pid=ImgDetMain" alt="Superman">
+                 <p>Superman</p>
+              </div>
+              <div class="dcdiv">
+                 <img class="fun" src="https://th.bing.com/th/id/OIP.ueuBPSMUq0B7UAL9nCU6dAHaHa?rs=1&pid=ImgDetMain" alt="Batman">
+                 <p>Batman</p>
+              </div>
+           </section>
+           <div class="logowsp">
+            <img class="logoWpp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/2048px-WhatsApp_logo-color-vertical.svg.png" alt="logo WhatsApp" />
+          </div>
+
+        </main>
+    <footer>
+        <div class="navegacion">
+            <h3>Navegacion</h3>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="nost.html">Sobre nosotros</a></li>
+              <li><a href="cont.html">Contacto</a></li>
+              <li><a href="cata.html">Catalogo</a></li>
+             
+            </ul>
+          </div>
+          <div class="envios">
+            <h3 class="pagoss">Metodos de pago</h3>
+            <ul class="ahre">
+              <li class="pagos">Efectivo</li>
+              <li class="pagos">Transferencia bancaria</li>
+              <li class="pagos">Debito/Credito</li>
+            </ul>
+          </div>
+          <div class="envios">
+            <h3 class="envioss">Envios</h3>
+            <ul class="ahre">
+              <li>A todo Córdoba capital en el día</li>
+              <li>A todo el país entre 48 a 72hs hábiles</li>
+            </ul>
+          </div>
+
+    </footer>
+    <h4>FUNKOS Galaxy</h4>
 </body>
 </html>
